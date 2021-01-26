@@ -1,0 +1,806 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NEOADVANCED</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="fa/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header header-one">
+    <div class="container-fluid">
+
+      <div class="container">
+        <div class="row header__inner">
+          <div class="col-sm-3 header__logo-inner">
+            <a href="#">
+              <img class="header__logo img img-responsive"   src="images/logo.png">
+            </a>
+          </div>
+
+          <div class="col-sm-9 header__menu__inner">
+            <div class="header__menu">
+              <nav class="header__nav-menu clearfix">
+                <ul class="header__menu-list">
+                  <li><a class="menu menu--active" href="#">ГЛАВНАЯ</a></li>
+                  <li><a class="menu" href="about.html">УСЛУГИ</a></li>
+                  <li><a class="menu" href="portofolio.html">ПОРТФОЛИО</a></li>
+                  <li><a class="menu" href="#">О НАС</a></li>
+                  <li><a class="menu menu-form" href="#">ВЕБХОСТИНГ</a></li>
+                  <li><a class="menu" href="#">КОНТАКТЫ</a></li>
+                </ul>
+              </nav>	
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="hamburger" onclick="myFunction(this)">
+              <div class="icon-inner icon1"></div>
+              <div class="icon-inner icon2"></div>
+              <div class="icon-inner icon3"></div>
+            </div>
+          </div>
+          <div class="header__menu-responsive">
+            <nav class="header__nav-menu">
+              <ul class="header__menu-adaptiv">
+                <li><a class="menu menu--active" href="#">ГЛАВНАЯ</a></li>
+                <li><a class="menu" href="about.html">УСЛУГИ</a></li>
+                <li><a class="menu" href="portofolio.html">ПОРТФОЛИО</a></li>
+                <li><a class="menu" href="#">О НАС</a></li>
+                <li><a class="menu menu-form" href="#">ВЕБХОСТИНГ</a></li>
+                <li><a class="menu" href="#">КОНТАКТЫ</a></li>
+              </ul>
+            </nav>
+            <div class="language__burger">
+              <button class="language-ru language-ru--active">RU</button>
+              <div class="content" style="display:block;"><button class="language-en">EN</button>
+                <button class="language-ro">RO</button>
+              </div>
+            </div>
+            <div class="col-sm-3 footer__social-adaptive">
+              <p class="social-adaptive">Найдите нас на:</p>
+              <a class="social__copy-adaptive google-bg " href="#"></a>
+              <a class="social__copy-adaptive fb-bg " href="#"></a>
+              <a class="social__copy-adaptive twt-bg " href="#"></a>
+              <a class="social__copy-adaptive yt-bg " href="#"></a>   
+            </div>
+            <div class="col-sm-3 phone__burger">
+              <a class="phone__bg" href="tel:+37379518887">+373 795 18 887</a>
+            </div>	
+          </div>
+
+
+          <div class="col-sm-7 form-popup">
+            <div class="form__contact-menu">
+              <div class="hosting__contact-inner">
+                <h3 class="form__title">форма заполнения</h3>
+                <form>
+                  <div class="form-group">
+                    <input class="form-control"  placeholder="Имя*">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Почта*">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Название*">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Сообщение*">
+                  </div>
+                </form> 
+                <div class="row btn__form">
+                  <div class="col-sm-12 form__btn-link form-btn-popup">
+                    <div class="form__btn-inner">
+                      <a class="form__btn" href="#" >Заказать сейчас
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__btn-close">
+                  <a class="close-btn" href="#"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-7 form-popup-responsive">
+            <div class="form__contact-menu">
+              <div class="hosting__contact-inner">
+                <h3 class="form__title">форма заполнения</h3>
+                <form>
+                  <div class="form-group">
+                    <input class="form-control"  placeholder="Имя*">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Телефон*">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Сообщение*">
+                  </div>
+                </form> 
+                <div class="row btn__form">
+                  <div class="col-sm-12 form__btn-link">
+                    <div class="form__btn-inner">
+                      <a class="form__btn" href="#" >Заказать
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__btn-close">
+                  <a class="close-btn" href="#"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>	
+  </header>
+
+  <!-- START PRINCIPAL SECTION -->
+<div id="snow"></div>
+  <section class="principal img-responsive" style="background-image: url(images/Desktop.png);">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row principal__rotate-text">
+          <div class="col-sm-3">
+            <div class="rotate__text">
+              <div class="header__rotate-number">01</div>главная	
+            </div>	
+          </div>	
+        </div>
+        <div class="language language__index">
+          <div class="content" style="display:block;"><button class="language-en language-eng">EN</button>
+            <button class="language-ro language-rom">RO</button>
+             <button class="language-ru language-rus language-ru--active">RU</button>
+          </div>
+        </div>
+
+        <div class="principal__arrow-inner">
+          <a class="principal__arrow" href="#"><i class="fal fa-long-arrow-up"style="font-size: 25px; font-weight: 200; color: #d51e25;"></i></a>
+        </div>
+        <div class="row arrow__up">
+          <div class="col-sm-3 ">
+            <a href="#">
+              <img class="arrow__up-image" src="fa/svgs/solid/arrow-circle-up.svg">	
+            </a>	
+          </div>	
+        </div>
+        <div class="principal__list">	
+          <div class="row principal__title-inner">
+            <div class="col-sm-12 principal__title-list">
+              <h2 class="principal__title">разработка решений <br> <span> по всему миру</span></br></h2>	
+            </div>	
+          </div>
+          <div class="row btn__link">
+            <div class="col-sm-12 principal__btn-link">
+              <div class="principal__btn-inner">
+                <a class="principal__btn" href="#" >Заказать сейчас
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portofolio">
+    <header class="portofolio__header header__down">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row header__inner">
+          <div class="col-sm-3 header__logo-inner">
+            <a href="#">
+              <img class="header__logo img img-responsive"   src="images/logo2.png">
+            </a>
+
+          </div>
+          <div class="col-sm-9 header__menu__portofolio">
+            <div class="portofolio__menu">
+              <nav class="portofolio-nav-menu clearfix">
+                <ul class="portofolio__menu-list">
+                  <li><a class="menu" href="#">ГЛАВНАЯ</a></li>
+                  <li><a class="menu menu--active" href="#">УСЛУГИ</a></li>
+                  <li><a class="menu" href="#">ПОРТФОЛИО</a></li>
+                  <li><a class="menu" href="#">О НАС</a></li>
+                  <li><a class="menu" href="#">ВЕБХОСТИНГ</a></li>
+                  <li><a class="menu" href="#">КОНТАКТЫ</a></li>
+                </ul>
+              </nav>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row footer__rotate-text port-rotate">
+          <div class="col-sm-3">
+            <div class="rotate__text">
+              <div class="rotate__number footer__rotate-number">03</div>ПОРТФОЛИО
+            </div>	
+          </div>	
+        </div>
+        <div class="portofolio__inner">
+          <div class="row portofolio-slick">
+
+            <div class="col-sm-4 portofolio__item">
+              <h3 class="about__title portofolio__title">
+                MILLE.MD
+              </h3>
+              <div class="portofolio__theme">
+                Scanding <div class="line">Marketing</div>Promo
+              </div>
+              <p class="about__text text__site">
+                Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа. Создан в программе UXPin, смотреть по ссылке только на десктопе, мобильная версия отдельно. Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа. Создан в программе UXPin, смотреть по ссылке только на десктопе, мобильная версия отдельно. Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа.	
+              </p>	
+            </div>	
+
+            <div class="col-sm-7 portofolio__mille-image">
+              <img class="portofolio__mille img-responsive" src="images/mille-img.png">
+            </div>	
+          </div>
+
+          <div class="row portofolio-slick">
+            <div class="col-sm-4 portofolio__item">
+              <h3 class="about__title portofolio__title">
+                MILLE.MD
+              </h3>
+              <div class="portofolio__theme">
+                Scanding <div class="line">Marketing</div>Promo
+              </div>
+              <p class="about__text text__site">
+                Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа. Создан в программе UXPin, смотреть по ссылке только на десктопе, мобильная версия отдельно. Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа. Создан в программе UXPin, смотреть по ссылке только на десктопе, мобильная версия отдельно. Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа.	
+              </p>	
+            </div>	
+
+            <div class="col-sm-7 portofolio__mille-image">
+              <img class="portofolio__mille img-responsive" src="images/mille-img.png">
+            </div>	
+          </div>
+
+          <div class="row portofolio-slick">
+
+            <div class="col-sm-4 portofolio__item">
+              <h3 class="about__title portofolio__title">
+                MILLE.MD
+              </h3>
+              <div class="portofolio__theme">
+                Scanding <div class="line">Marketing</div>Promo
+              </div>
+              <p class="about__text text__site">
+                Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа. Создан в программе UXPin, смотреть по ссылке только на десктопе, мобильная версия отдельно. Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа. Создан в программе UXPin, смотреть по ссылке только на десктопе, мобильная версия отдельно. Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа.	
+              </p>	
+            </div>	
+
+            <div class="col-sm-7 portofolio__mille-image">
+              <img class="portofolio__mille img-responsive" src="images/mille-img.png">
+            </div>	
+          </div>
+
+          <div class="row portofolio-slick">
+
+            <div class="col-sm-4 portofolio__item">
+              <h3 class="about__title portofolio__title">
+                MILLE.MD
+              </h3>
+              <div class="portofolio__theme">
+                Scanding <div class="line">Marketing</div>Promo
+              </div>
+              <p class="about__text text__site">
+                Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа. Создан в программе UXPin, смотреть по ссылке только на десктопе, мобильная версия отдельно. Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа. Создан в программе UXPin, смотреть по ссылке только на десктопе, мобильная версия отдельно. Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа.	
+              </p>	
+            </div>	
+
+            <div class="col-sm-7 portofolio__mille-image">
+              <img class="portofolio__mille img-responsive" src="images/mille-img.png">
+            </div>	
+          </div>
+
+          <div class="row portofolio-slick">
+
+            <div class="col-sm-4 portofolio__item">
+              <h3 class="about__title portofolio__title">
+                MILLE.MD
+              </h3>
+              <div class="portofolio__theme">
+                Scanding <div class="line">Marketing</div>Promo
+              </div>
+              <p class="about__text text__site">
+                Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа. Создан в программе UXPin, смотреть по ссылке только на десктопе, мобильная версия отдельно. Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа. Создан в программе UXPin, смотреть по ссылке только на десктопе, мобильная версия отдельно. Статья о том как получить пользовательский опыт на стадии проектирования. Показываю это на текущей версии рабочего UX-прототипа.	
+              </p>	
+            </div>	
+
+            <div class="col-sm-7 portofolio__mille-image">
+              <img class="portofolio__mille img-responsive" src="images/mille-img.png">
+            </div>	
+          </div>
+
+        </div>
+
+        <div class="row portofolio__button-all">
+          <div class="col-sm-4 portofolio__button">
+            <a class="portofolio__btn-inner" href="#">
+            Смотреть все</a>	
+          </div>
+        </div>	
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- END PORTOFOLIO SECTION -->
+
+  <section class="about">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row footer__rotate-text about__rotate">
+          <div class="col-sm-3">
+            <div class="rotate__text about__rotate-text">
+              <div class="rotate__number footer__rotate-number">04</div>О НАС	
+            </div>	
+          </div>	
+        </div>
+        <div class="row about__company">
+          <div class="col-sm-4 info__about">
+            <h3 class="about__title">О НАС</h3>
+            <p class="about__text">NEOADVANCED Web Solution & Digital Marketing специализируется на проектирование и разработке веб-сайтов, приложений для интер - и интернета, флэш-анимации и мультимедиа,корпоративных презентации и др.Реализованные нами проекты говорят сами за себя.Мы обеспечиваем исключительные результаты за счет многолетнего опыта использования веб-графических технологий.Наша компания прелагает профессиональный веб-дизайн, флэш-дизайн, рафический дизайн и дизайн баннеров, разработку логотипа, создание и обслуживание веб-сайтов и многие другие веб-решения </p>	
+          </div>
+          <div class="col-sm-6 office__image">
+            <img class="office__team img-responsive" src="images/office.png">	
+          </div>
+        </div>
+        </div>
+        <div class="slick__items">
+         <div class="slick__inner">
+          <img class="slick-img img-responsive" src="images/3.png">
+          <div class="slick__inner-link">
+            <a href="#">UX/UI Designer</a>	
+          </div>
+          <div class="slick__inner-text"><a href="#">Реализованные нами проекты говорят сами за себя.Мы обеспечиваем исключительные результаты за счет многолетнего опыта использования веб-графических технологий</a></div>
+        </div>
+        <div class="slick__inner">
+          <img class="slick-img img-responsive" src="images/22.png">
+          <div class="slick__inner-link">
+            <a href="#">UX/UI Designer</a>	
+          </div>
+          <div class="slick__inner-text"><a href="#">Реализованные нами проекты говорят сами за себя.Мы обеспечиваем исключительные результаты за счет многолетнего опыта использования веб-графических технологий</a></div>
+        </div>
+        <div class="slick__inner">
+          <img class="slick-img img-responsive" src="images/33.png">
+          <div class="slick__inner-link">
+            <a href="#">UX/UI Designer</a>	
+          </div>
+          <div class="slick__inner-text"><a href="#">Реализованные нами проекты говорят сами за себя.Мы обеспечиваем исключительные результаты за счет многолетнего опыта использования веб-графических технологий</a></div>
+        </div>
+        <div class="slick__inner">
+          <img class="slick-img img-responsive" src="images/22.png">
+          <div class="slick__inner-link">
+            <a href="#">UX/UI Designer</a>	
+          </div>
+          <div class="slick__inner-text"><a href="#">Реализованные нами проекты говорят сами за себя.Мы обеспечиваем исключительные результаты за счет многолетнего опыта использования веб-графических технологий</a></div>
+        </div>
+        <div class="slick__inner">
+          <img class="slick-img img-responsive" src="images/22.png">
+          <div class="slick__inner-link">
+            <a href="#">UX/UI Designer</a>	
+          </div>
+          <div class="slick__inner-text"><a href="#">Реализованные нами проекты говорят сами за себя.Мы обеспечиваем исключительные результаты за счет многолетнего опыта использования веб-графических технологий</a></div>
+        </div>
+        <div class="slick__inner">
+          <img class="slick-img img-responsive" src="images/33.png">
+          <div class="slick__inner-link">
+            <a href="#">UX/UI Designer</a>	
+          </div>
+          <div class="slick__inner-text"><a href="#">Реализованные нами проекты говорят сами за себя.Мы обеспечиваем исключительные результаты за счет многолетнего опыта использования веб-графических технологий</a></div>
+        </div>
+        <div class="slick__inner">
+          <img class="slick-img img-responsive" src="images/22.png">
+          <div class="slick__inner-link">
+            <a href="#">UX/UI Designer</a>	
+          </div>
+          <div class="slick__inner-text"><a href="#">Реализованные нами проекты говорят сами за себя.Мы обеспечиваем исключительные результаты за счет многолетнего опыта использования веб-графических технологий</a></div>
+        </div>
+      </div>
+    	
+  </div>
+</section>
+
+<section class="hosting">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row host__rotate-text">
+        <div class="col-sm-3">
+          <div class="rotate__text host__rotate__number">
+            <div class="rotate__number-host host__rotate-number">05</div>ВЕБХОСТИНГ
+          </div>	
+        </div>	
+      </div>
+      <h2 class="hosting__title">ВЕБХОСТИНГ</h2>
+      <div class="row hosting__line">
+        <div class="col-sm-3 hosting__inner">
+          <div class="host"style="background-image: url(images/pret1.png)">
+            <h3 class="host__title">START</h3>
+            <p class="host__price-year">30€ / год</p>
+            <p class="host__price-month">2,5€ / месяц</p>
+            <p class="host__memory">1 GB</p>
+            <p class="host__memory-text">дисковое пространство</p>
+            <p class="host__trafic">100 GB</p>
+            <p class="host__trafic-text">трафика в месяц</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen host__domen-text">неограниченное количество доменов</p>
+            <p class="host__panel">PLESK</p>
+            <p class="host__panel-text">панель управления</p>
+
+            <a class="host__btn" href="#">Заказать сейчас</a>
+          </div>	
+        </div>
+
+        <div class="col-sm-3 hosting__inner">
+          <div class="host"style="background-image: url(images/pret2.png)">
+            <h3 class="host__title">START</h3>
+            <p class="host__price-year">42€ / год</p>
+            <p class="host__price-month">3,5€ / месяц</p>
+            <p class="host__memory">2 GB</p>
+            <p class="host__memory-text">дисковое пространство</p>
+            <p class="host__trafic">200 GB</p>
+            <p class="host__trafic-text">трафика в месяц</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen host__domen-text">неограниченное количество доменов</p>
+            <p class="host__panel">PLESK</p>
+            <p class="host__panel-text">панель управления</p>
+
+            <a class="host__btn" href="#">Заказать сейчас</a>
+          </div>	
+        </div>
+
+        <div class="col-sm-3 hosting__inner">
+          <div class="host active"style="background-image: url(images/pret3.png)">
+            <h3 class="host__title">START</h3>
+            <p class="host__price-year">51€ / год</p>
+            <p class="host__price-month">4,2€ / месяц</p>
+            <p class="host__memory">4 GB</p>
+            <p class="host__memory-text">дисковое пространство</p>
+            <p class="host__trafic">400 GB</p>
+            <p class="host__trafic-text">трафика в месяц</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen host__domen-text">неограниченное количество доменов</p>
+            <p class="host__panel">PLESK</p>
+            <p class="host__panel-text">панель управления</p>
+
+            <a class="host__btn" href="#">Заказать сейчас</a>
+          </div>	
+        </div>
+
+        <div class="col-sm-3 hosting__inner">
+          <div class="host"style="background-image: url(images/pret4.png)">
+            <h3 class="host__title">START</h3>
+            <p class="host__price-year">60€ / год</p>
+            <p class="host__price-month">5€ / месяц</p>
+            <p class="host__memory">6 GB</p>
+            <p class="host__memory-text">дисковое пространство</p>
+            <p class="host__trafic">600 GB</p>
+            <p class="host__trafic-text">трафика в месяц</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen host__domen-text">неограниченное количество доменов</p>
+            <p class="host__panel">PLESK</p>
+            <p class="host__panel-text">панель управления</p>
+
+            <a class="host__btn" href="#">Заказать сейчас</a>
+          </div>	
+        </div>	
+      </div>
+
+      <!-- HOSTING RESPONSIV	 -->
+      <div class="row hosting__responsive">
+        <div class="col-sm-3 hosting__inner-responsive">
+          <div class="host-responsive"style="background-image: url(images/pret1.png)">
+            <h3 class="host__title">START</h3>
+            <p class="host__price-year">30€ / год</p>
+            <p class="host__price-month">2,5€ / месяц</p>
+            <p class="host__memory">1 GB</p>
+            <p class="host__memory-text">дисковое пространство</p>
+            <p class="host__trafic">100 GB</p>
+            <p class="host__trafic-text">трафика в месяц</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen host__domen-text">неограниченное количество доменов</p>
+            <p class="host__panel">PLESK</p>
+            <p class="host__panel-text">панель управления</p>
+
+            <a class="host__btn" href="#">Заказать сейчас</a>
+          </div>  
+        </div>
+
+        <div class="col-sm-3 hosting__inner-responsive">
+          <div class="host-responsive"style="background-image: url(images/pret2.png)">
+            <h3 class="host__title">START</h3>
+            <p class="host__price-year">42€ / год</p>
+            <p class="host__price-month">3,5€ / месяц</p>
+            <p class="host__memory">2 GB</p>
+            <p class="host__memory-text">дисковое пространство</p>
+            <p class="host__trafic">200 GB</p>
+            <p class="host__trafic-text">трафика в месяц</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen host__domen-text">неограниченное количество доменов</p>
+            <p class="host__panel">PLESK</p>
+            <p class="host__panel-text">панель управления</p>
+
+            <a class="host__btn" href="#">Заказать сейчас</a>
+          </div>  
+        </div>
+
+        <div class="col-sm-3 hosting__inner-responsive">
+          <div class="host-responsive"style="background-image: url(images/pret3.png)">
+            <h3 class="host__title">START</h3>
+            <p class="host__price-year">51€ / год</p>
+            <p class="host__price-month">4,2€ / месяц</p>
+            <p class="host__memory">4 GB</p>
+            <p class="host__memory-text">дисковое пространство</p>
+            <p class="host__trafic">400 GB</p>
+            <p class="host__trafic-text">трафика в месяц</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen host__domen-text">неограниченное количество доменов</p>
+            <p class="host__panel">PLESK</p>
+            <p class="host__panel-text">панель управления</p>
+
+            <a class="host__btn" href="#">Заказать сейчас</a>
+          </div>  
+        </div>
+
+        <div class="col-sm-3 hosting__inner-responsive">
+          <div class="host-responsive"style="background-image: url(images/pret4.png)">
+            <h3 class="host__title">START</h3>
+            <p class="host__price-year">60€ / год</p>
+            <p class="host__price-month">5€ / месяц</p>
+            <p class="host__memory">6 GB</p>
+            <p class="host__memory-text">дисковое пространство</p>
+            <p class="host__trafic">600 GB</p>
+            <p class="host__trafic-text">трафика в месяц</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen">неограниченное количество доменов</p>
+            <p class="host__domen host__domen-text">неограниченное количество доменов</p>
+            <p class="host__panel">PLESK</p>
+            <p class="host__panel-text">панель управления</p>
+
+            <a class="host__btn" href="#">Заказать сейчас</a>
+          </div>  
+        </div>  
+      </div>
+
+      <!-- END HOSTING RESPOSIVE -->
+    </div>	
+  </div>	
+</section>
+
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row footer__rotate-text footer__rotate">
+        <div class="col-sm-3">
+          <div class="rotate__text footer__rotate-inner">
+            <div class="rotate__number footer__rotate-number">06</div>контакты
+          </div>	
+        </div>	
+      </div>
+      <div class="row footer__contact-inner">
+        <div class="col-sm-6 footer__contact">
+          <div class="contact-inner">
+            <h3 class="footer__title-contact">контакты</h3>
+            <ul class="footer__list">
+              <li class="footer__contact-text"><span class="location"></span> Uzinelor 171/3 str.,Chisinau,MD 2037,Republic of Moldova</li>
+              <li class="footer__contact-text"><span class="mail"></span>office@neoadvanced.com</li>
+              <li class="footer__contact-text">
+                <span class="phone"></span><a href="tel:+37379518887">+373 795 18 887 ,</a> <a href="tel:+37379600200">+373 79 600 200</a></li>
+                <li class="footer__contact-text"><span class="globe"></span> https://www.neoadvanced.com
+                  <a class="web-site" href="#"></a></li>
+                  <li class="footer__contact-text skype"> andrei.dorogan</li>	
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-5 form__contact">
+              <div class="form__contact-inner">
+                <h3 class="footer__title-form"><span class="social"></span>форма заполнения</h3>
+                <form>
+                  <div class="form-group">
+                    <input class="form-control"  placeholder="Имя*">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Почта*">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Название*">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Сообщение*">
+                  </div>
+                </form>	
+              </div>
+            </div>	
+          </div>
+          <div class="row footer__location">
+            <div class="col-sm-12 ">
+              <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDISXezS7oXOsfIvfBIvhaBHpG-O07E-gU" type="text/javascript"></script>
+<!-- <script>
+$(document).on('click', 'hosting__line' , function(){
+	$(this).addClass('active').siblings().removeClass('active')
+
+})
+</script> -->   
+<div class="map-inner
+" style="width:100%;height:400; overflow:hidden;">
+<div id="googleMap" style="width:100%;height:100%;"></div>
+</div>	
+            </div>	
+          </div>
+        </div>
+
+        <div class="row footer__copy">
+          <div class="col-sm-7 copyright__text">
+            <p class="footer__copy-text">Copyright © 2008-2020 NEOADVANCED Web Solution & Digital Marketing.Все права защищены.</p>
+          </div>
+          <div class="col-sm-2 copy__text"><a href="#">Политика конфиденциальности.
+          </a></div>	
+          <div class="col-sm-3 footer__social">
+            <p class="social">Найдите нас на:</p>
+            <a class="social__copy-images google" href="#"></a>
+            <a class="social__copy-images fb" href="#"></a>
+            <a class="social__copy-images twt" href="#"></a>
+            <a class="social__copy-images yt" href="#"></a>		
+          </div>
+        </div>	
+      </div>		
+    </footer>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+  /*-------------------------------------------------------------------------------------------------------------------*/
+  /*                           INITIATE GOOOGLE MAP                                                                    */
+  /*-------------------------------------------------------------------------------------------------------------------*/
+
+
+  var myCenter=new google.maps.LatLng(46.995441,28.905512);
+
+  function initialize()
+  {
+
+    var roadAtlasStyles = [
+    {
+      "featureType": "road.highway",
+      "elementType": "geometry",
+      "stylers": [
+      { "saturation": -100 },
+      { "lightness": -8 },
+      { "gamma": 1.18 }
+      ]
+    }, {
+      "featureType": "road.arterial",
+      "elementType": "geometry",
+      "stylers": [
+      { "saturation": -100 },
+      { "gamma": 1 },
+      { "lightness": -24 }
+      ]
+    }, {
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [
+      { "saturation": -100 }
+      ]
+    }, {
+      "featureType": "administrative",
+      "stylers": [
+      { "saturation": -100 }
+      ]
+    }, {
+      "featureType": "transit",
+      "stylers": [
+      { "saturation": -100 }
+      ]
+    }, {
+      "featureType": "water",
+      "elementType": "geometry.fill",
+      "stylers": [
+      { "saturation": -100 }
+      ]
+    }, {
+      "featureType": "road",
+      "stylers": [
+      { "saturation": -100 }
+      ]
+    }, {
+      "featureType": "administrative",
+      "stylers": [
+      { "saturation": -100 }
+      ]
+    }, {
+      "featureType": "landscape",
+      "stylers": [
+      { "saturation": -100 }
+      ]
+    }, {
+      "featureType": "poi",
+      "stylers": [
+      { "saturation": 0 }
+      ]
+    }, {
+    }
+    ] 
+
+    var mapProp = {
+      center:myCenter,
+      zoom:18,
+      mapTypeId:google.maps.MapTypeId.ROADMAP,
+      disableDefaultUI:true,
+    };
+
+
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    var marker=new google.maps.Size(20,20)
+    var marker=new google.maps.Marker({
+      position:myCenter,
+      icon:'../images/markerrr.svg'
+
+    });
+
+    marker.setMap(map);
+                  /*
+                  var infowindow = new google.maps.InfoWindow({
+                    content:'<span class="mapinfo">"Maronini" SRL <br />Columna 99 str.</span>'
+                    });
+                    
+                  
+                  
+                  infowindow.open(map,marker);
+                  */
+                  var styledMapOptions = {
+
+                  };
+
+                  var usRoadMapType = new google.maps.StyledMapType(
+                    roadAtlasStyles, styledMapOptions);
+
+                  map.mapTypes.set('usroadatlas', usRoadMapType);
+                  map.setMapTypeId('usroadatlas');
+                  
+                  
+                  google.maps.event.addListener(map,'center_changed',function() {
+              // 3 seconds after the center of the map has changed, pan back to the marker
+              window.setTimeout(function() {
+                map.panTo(marker.getPosition());
+              },500);
+            });
+                  
+                }
+
+
+
+                google.maps.event.addDomListener(window, 'load', initialize);
+
+
+              </script>
+    <script src="js/main.js"></script>
+  </body>
+  </html>
